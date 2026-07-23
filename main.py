@@ -64,7 +64,7 @@ async def upload(bot: Client, m: Message):
                name, url = i.split(":", 1)
                links.append([name.strip(), 
        url.strip()])
-               except:
+           except Exception:
                    continue
        os.remove(x)
             # print(len(links)
